@@ -18,7 +18,7 @@ export default function Cards(props) {
                     <Box ml={4} flex={1}>
                         <Avatar alt="Amazon" src={avatLink} sx={{ height: '60px', width: '60px' }} />
                     </Box>
-                    <Box flex={7}>
+                    <Box flex={6.5}>
                         <Stack direction='column' spacing={1}>
                             <Typography component='h5' variant='h6'>{expTitle}</Typography>
                             <Stack direction='row' spacing={1} justifyContent='flex-start' alignItems='center'>
@@ -39,8 +39,8 @@ export default function Cards(props) {
                             <Typography component='h5' variant='body2'>{price3}</Typography>
                         </Stack>
                     </Box>
-                    <Divider orientation='vertical' />
-                    <Box flex={1} height='107px' display='flex' justifyContent='center' alignItems='center'>
+                    <Divider orientation='vertical' flexItem={true} />
+                    <Box flex={1.5} height='107px' display='flex' justifyContent='center' alignItems='center'>
                         <Checkbox icon={checkBtn} checkedIcon={<TurnedInIcon />} aria-label="noted" />
                     </Box>
                 </Stack>

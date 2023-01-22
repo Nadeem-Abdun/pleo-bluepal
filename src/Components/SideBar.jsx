@@ -15,7 +15,8 @@ export default function SideBar() {
     const StyledTab = styled(Tab)({
         minHeight: '10px',
         justifyContent: "flex-start",
-        textTransform: 'capitalize'
+        textTransform: 'capitalize',
+        fontSize: '13px'
     })
     const [value, setValue] = useState('2')
     const handleChange = (event, newValue) => {
@@ -25,12 +26,12 @@ export default function SideBar() {
         <Box height='100vh' px={1} zIndex={1}>
             {/* Dashboard Title */}
             <Box height='13vh' display='flex' justifyContent='center' alignItems='center'>
-                <Box mt={3} component="img" height='120px' alt="Foodie Logo" src={PleoLogo} />
+                <Box mt='10px' component="img" height='120px' alt="Foodie Logo" src={PleoLogo} />
             </Box>
             {/* Dashboard Avatar */}
             <Box height='20vh' display='flex' justifyContent='center' alignItems='center' flexDirection='column'>
                 <Avatar alt="Cindy Baker" src="https://material-ui.com/static/images/avatar/3.jpg" variant='circular' sx={{ height: '60px', width: '60px' }} />
-                <Typography component='h2' variant='h6' my={0.1}>Astria</Typography>
+                <Typography component='h2' variant='h6' my='5px'>Astria</Typography>
             </Box>
             {/* Dashboard Tab List */}
             <Box height='65vh'>

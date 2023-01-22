@@ -6,7 +6,7 @@ import Content from './Components/Content';
 function App() {
   return (
     <>
-      <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+      <Box sx={{ display: { xs: 'none', md: 'block' } }} maxWidth='100vw'>
         <Stack direction='row' bgcolor='#ffffff' >
           <Box flex={2} px={0}>
             <SideBar />
@@ -20,7 +20,7 @@ function App() {
           </Box>
         </Stack>
       </Box>
-      <Box height='100vh' width='100vw' sx={{ display: { xs: 'flex', md: 'none' } }}>
+      <Box maxWidth='100vw' sx={{ display: { xs: 'flex', md: 'none' } }}>
         <Box display='flex' justifyContent='center' alignItems='center' >
           <Typography component='h2' variant='h2'>🚧⚠️This App is not optimized for mobile view, Please switch to a desktop view.⚠️🚧</Typography>
         </Box>

@@ -8,7 +8,7 @@ import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined
 
 export default function AppsBar() {
   const SearchBar = styled('div')({
-    backgroundColor: 'white',
+    color: '#f0f6f6',
     borderRadius: 8,
     width: '15%',
     height: '75%',
@@ -23,11 +23,11 @@ export default function AppsBar() {
       </Box>
       <Stack height='5vh' mb={2} direction='row' justifyContent='space-between' alignItems='center' mx={2}>
         <Typography component='h6' variant='body2'>Wallet balance <b> 71.180,00 kr</b></Typography>
-        <SearchBar><SearchIcon /><InputBase placeholder='Search in activity' fullWidth /></SearchBar>
-        <Chip icon={<IosShareIcon />} label="Export" />
+        <SearchBar><SearchIcon color='info' /><InputBase placeholder='Search in activity' fullWidth /></SearchBar>
+        <Chip icon={<IosShareIcon fontSize='small' />} size='medium' label="Export" clickable/>
         <Stack direction='row'>
           <Typography component='body1' variant='body2' m='auto' textAlign='start'>Filter</Typography>
-          <IconButton aria-label="sort">
+          <IconButton aria-label="sort" >
             <SortIcon />
           </IconButton>
           <IconButton aria-label="help">

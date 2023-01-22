@@ -19,7 +19,7 @@ export default function Content() {
 
         <Cards avatLink='https://material-ui.com/static/images/avatar/2.jpg' expTitle='PVR Cinemas' descName='Stacy Armijo' chip1='Entertainment' chip2='Note added' chip1ico={<VideocamIcon />} chip2ico={<CheckBoxOutlinedIcon />} chip1col='secondary' chip2col='default' price1='' price2='280 $' price3='Pending' pricecol='default' checkBtn={<BookmarkBorderIcon/>} />
 
-        <Cards avatLink='https://material-ui.com/static/images/avatar/5.jpg' expTitle='Overheats PS3 Gamezone' descName='Dominique' chip1='Entertainment' chip2='Add note' chip1ico={<VideocamIcon />} chip2ico={<CheckBoxOutlinedIcon />} chip1col='secondary' chip2col='default' price1='' price2='150 $' price3='120,00 kr' pricecol='default' checkBtn={<BookmarkBorderIcon/>} />
+        <Cards avatLink='https://material-ui.com/static/images/avatar/5.jpg' expTitle='Overheats PS3 Gamezone' descName='Dominique' chip1='Entertainment' chip2='Add note' chip1ico={<VideocamIcon />} chip2ico={<NoteAltIcon />} chip1col='secondary' chip2col='primary' price1='' price2='150 $' price3='120,00 kr' pricecol='default' checkBtn={<BookmarkBorderIcon/>} />
       </Stack>
     </>
   )
