@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { Box, Divider, Stack, Typography } from '@mui/material'
+import AppsBar from './Components/AppsBar';
+import SideBar from './Components/SideBar';
+import Content from './Components/Content';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+        <Stack direction='row' bgcolor='#ffffff' >
+          <Box flex={2} px={0}>
+            <SideBar />
+          </Box>
+          <Box flex={10} px={0} bgcolor='#f0f6f6' maxWidth='82vw' justifyContent='center' alignItems='center'>
+            <Stack direction='column' maxWidth='90%' mx='auto'>
+              <AppsBar />
+              <Divider />
+              <Content />
+            </Stack>
+          </Box>
+        </Stack>
+      </Box>
+      <Box height='100vh' width='100vw' sx={{ display: { xs: 'flex', md: 'none' } }}>
+        <Box display='flex' justifyContent='center' alignItems='center' >
+          <Typography component='h2' variant='h2'>🚧⚠️This App is not optimized for mobile view, Please switch to a desktop view.⚠️🚧</Typography>
+        </Box>
+      </Box>
+    </>
   );
 }
 
