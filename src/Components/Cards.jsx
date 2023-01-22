@@ -14,7 +14,7 @@ export default function Cards(props) {
     return (
         <>
             <StyledCard variant="outlined">
-                <Stack direction='row' mt={1} alignItems='center'>
+                <Stack direction='row' my={0.5} alignItems='center'>
                     <Box ml={4} flex={1}>
                         <Avatar alt="Amazon" src={avatLink} sx={{ height: '60px', width: '60px' }} />
                     </Box>
