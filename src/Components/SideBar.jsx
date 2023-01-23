@@ -23,10 +23,10 @@ export default function SideBar() {
         setValue(newValue)
     }
     return (
-        <Box height='100%' px={1} zIndex={1}>
+        <Box height='100%' px={1}>
             {/* Dashboard Title */}
             <Box height='13%' display='flex' justifyContent='center' alignItems='center'>
-                <Box mt='10px' component="img" height='120px' alt="Foodie Logo" src={PleoLogo} />
+                <Box mt='10px' component="img" height='120px' alt="Pleo Logo" src={PleoLogo} />
             </Box>
             {/* Dashboard Avatar */}
             <Box height='20%' display='flex' justifyContent='center' alignItems='center' flexDirection='column'>
