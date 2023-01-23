@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/pleo-bluepal/static/js/main.e7cd0b45.js",
+    "main.js": "/pleo-bluepal/static/js/main.0e9bf043.js",
     "static/js/787.28417210.chunk.js": "/pleo-bluepal/static/js/787.28417210.chunk.js",
     "static/media/PleoLogo.jpg": "/pleo-bluepal/static/media/PleoLogo.abd60cb295e56c6edbe7.jpg",
     "index.html": "/pleo-bluepal/index.html",
-    "main.e7cd0b45.js.map": "/pleo-bluepal/static/js/main.e7cd0b45.js.map",
+    "main.0e9bf043.js.map": "/pleo-bluepal/static/js/main.0e9bf043.js.map",
     "787.28417210.chunk.js.map": "/pleo-bluepal/static/js/787.28417210.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.e7cd0b45.js"
+    "static/js/main.0e9bf043.js"
   ]
 }
