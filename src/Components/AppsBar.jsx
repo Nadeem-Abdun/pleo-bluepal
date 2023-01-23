@@ -18,10 +18,10 @@ export default function AppsBar() {
 
   return (
     <>
-      <Box height='10vh' display='flex' justifyContent='flex-start' alignItems='flex-end' mx={2}>
+      <Box height='10%' display='flex' justifyContent='flex-start' alignItems='flex-end' mx={2}>
         <Typography component='h1' variant='h4' >Expenses</Typography>
       </Box>
-      <Stack height='5vh' mb={2} direction='row' justifyContent='space-between' alignItems='center' mx={2}>
+      <Stack height='5%' mb={2} direction='row' justifyContent='space-between' alignItems='center' mx={2}>
         <Typography component='h6' variant='body2'>Wallet balance <b> 71.180,00 kr</b></Typography>
         <SearchBar><SearchIcon color='info' /><InputBase placeholder='Search in activity' fullWidth /></SearchBar>
         <Chip icon={<IosShareIcon fontSize='small' />} size='medium' label="Export" clickable/>

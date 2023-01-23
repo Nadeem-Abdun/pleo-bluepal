@@ -23,18 +23,18 @@ export default function SideBar() {
         setValue(newValue)
     }
     return (
-        <Box height='100vh' px={1} zIndex={1}>
+        <Box height='100%' px={1} zIndex={1}>
             {/* Dashboard Title */}
-            <Box height='13vh' display='flex' justifyContent='center' alignItems='center'>
+            <Box height='13%' display='flex' justifyContent='center' alignItems='center'>
                 <Box mt='10px' component="img" height='120px' alt="Foodie Logo" src={PleoLogo} />
             </Box>
             {/* Dashboard Avatar */}
-            <Box height='20vh' display='flex' justifyContent='center' alignItems='center' flexDirection='column'>
+            <Box height='20%' display='flex' justifyContent='center' alignItems='center' flexDirection='column'>
                 <Avatar alt="Cindy Baker" src="https://material-ui.com/static/images/avatar/3.jpg" variant='circular' sx={{ height: '60px', width: '60px' }} />
                 <Typography component='h2' variant='h6' my='5px'>Astria</Typography>
             </Box>
             {/* Dashboard Tab List */}
-            <Box height='65vh'>
+            <Box height='65%'>
                 <TabContext value={value} >
                     <TabList orientation="vertical" aria-label="Vertical tabs list" onChange={handleChange} textColor='secondary' indicatorColor='secondary'>
                         <StyledTab label="My Cards" icon={<CreditCardIcon />} iconPosition='start' value={'1'} />

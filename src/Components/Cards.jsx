@@ -9,7 +9,7 @@ import styled from '@emotion/styled';
 export default function Cards(props) {
     const { avatLink, expTitle, descName, chip1, chip2, chip1ico, chip2ico, chip1col, chip2col, price1, price2, price3, pricecol, checkBtn } = props
     const StyledCard = styled(Card)({
-        minHeight: '15vh',
+        minHeight: '15%',
     })
     return (
         <>
