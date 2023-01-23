@@ -1,6 +1,7 @@
 {
   "homepage": "https://Nadeem-Abdun.github.io/pleo-bluepal",
   "name": "pleo-bluepal",
+  "author": "Nadeem",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -22,9 +22,15 @@ export default function Cards(props) {
                         <Stack direction='column' spacing={1}>
                             <Typography component='h5' variant='h6'>{expTitle}</Typography>
                             <Stack direction='row' spacing={1} justifyContent='flex-start' alignItems='center'>
-                                <Typography component='h5' variant='body2' ><Person2OutlinedIcon fontSize='small' />{descName}</Typography>
-                                <Typography component='h5' variant='body2' ><CalendarMonthOutlinedIcon fontSize='small' />13 Aug 2016</Typography>
-                                <Typography component='h5' variant='body2' ><QueryBuilderOutlinedIcon fontSize='small' />21 hours</Typography>
+                                <Typography component='h5' variant='body2' display='flex' justifyContent='flex-start' alignItems='center' >
+                                    <Person2OutlinedIcon fontSize='small' />{descName}
+                                </Typography>
+                                <Typography component='h5' variant='body2' display='flex' justifyContent='flex-start' alignItems='center' >
+                                    <CalendarMonthOutlinedIcon fontSize='small' />13 Aug 2016
+                                </Typography>
+                                <Typography component='h5' variant='body2' display='flex' justifyContent='flex-start' alignItems='center' >
+                                    <QueryBuilderOutlinedIcon fontSize='small' />21 hours
+                                </Typography>
                             </Stack>
                             <Stack direction='row' spacing={1}>
                                 <Chip size='small' variant='outlined' color={chip1col} icon={chip1ico} label={chip1} clickable />
