@@ -19,20 +19,21 @@ export default function Cards(props) {
                         <Avatar alt="Amazon" src={avatLink} sx={{ height: '60px', width: '60px' }} />
                     </Box>
                     <Box flex={6.5}>
-                        <Stack direction='column' spacing={1}>
-                            <Typography component='h5' variant='h6'>{expTitle}</Typography>
-                            <Stack direction='row' spacing={1} justifyContent='flex-start' alignItems='center'>
-                                <Typography component='h5' variant='body2' display='flex' justifyContent='flex-start' alignItems='center' >
+                        <Stack direction='column' spacing={1} display='flex' justifyContent='center' alignItems='flex-start'>
+                            <Typography component='h5' fontSize='18px'>{expTitle}</Typography>
+                            <Stack direction='row' spacing={3} justifyContent='flex-start' alignItems='center'>
+                                <Typography component='h5' fontSize='13px' display='flex' justifyContent='flex-start' alignItems='center' >
                                     <Person2OutlinedIcon fontSize='small' />{descName}
                                 </Typography>
-                                <Typography component='h5' variant='body2' display='flex' justifyContent='flex-start' alignItems='center' >
+                                <Typography component='h5' fontSize='13px' display='flex' justifyContent='flex-start' alignItems='center' >
                                     <CalendarMonthOutlinedIcon fontSize='small' />13 Aug 2016
                                 </Typography>
-                                <Typography component='h5' variant='body2' display='flex' justifyContent='flex-start' alignItems='center' >
+                                <Typography component='h5' fontSize='13px' display='flex' justifyContent='flex-start' alignItems='center' >
                                     <QueryBuilderOutlinedIcon fontSize='small' />21 hours
                                 </Typography>
                             </Stack>
-                            <Stack direction='row' spacing={1}>
+                            <Box>{/* Empty Box */}</Box>
+                            <Stack direction='row' spacing={3}>
                                 <Chip size='small' variant='outlined' color={chip1col} icon={chip1ico} label={chip1} clickable />
                                 <Chip size='small' variant='outlined' color={chip2col} icon={chip2ico} label={chip2} clickable />
                             </Stack>

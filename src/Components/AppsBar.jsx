@@ -13,29 +13,30 @@ export default function AppsBar() {
     width: '15%',
     height: '75%',
     display: 'flex',
-    justifyContent: 'space-between',
+    justifyContent: 'center',
+    alignItems: 'center'
   })
 
   return (
     <>
-      <Box minHeight='15%' my={1}>
-        <Box height='10%' display='flex' justifyContent='flex-start' alignItems='flex-end' mx={2}>
-          <Typography component='h1' variant='h4' >Expenses</Typography>
+      <Box minHeight='15%' mt={2}>
+        <Box height='10%' display='flex' justifyContent='flex-start' alignItems='flex-end' mx={2} mt={1}>
+          <Typography component='h1' fontSize='26px' >Expenses</Typography>
         </Box>
         <Stack height='5%' mb={2} direction='row' justifyContent='space-between' alignItems='center' mx={2}>
           <Typography component='h6' variant='body2'>Wallet balance <b> 71.180,00 kr</b></Typography>
-          <SearchBar><SearchIcon color='info' /><InputBase placeholder='Search in activity' fullWidth /></SearchBar>
-          <Chip icon={<IosShareIcon fontSize='small' />} size='medium' label="Export" clickable />
-          <Stack direction='row'>
-            <Typography component='body1' variant='body2' m='auto' textAlign='start'>Filter</Typography>
-            <IconButton aria-label="sort" >
-              <SortIcon />
+          <SearchBar><SearchIcon sx={{ color: '#727485' }} fontSize='small' /><InputBase placeholder='Search in activity' fullWidth /></SearchBar>
+          <Chip icon={<IosShareIcon fontSize='small' />} size='medium' label="Export" sx={{ bgcolor: '#e1e1e6' }} clickable />
+          <Stack direction='row' spacing={0.5}>
+            <Typography component='body1' fontSize='13px' m='auto' textAlign='start'>Filter</Typography>
+            <IconButton aria-label="sort" sx={{ bgcolor: '#e1e1e6' }}>
+              <SortIcon fontSize='small' />
             </IconButton>
-            <IconButton aria-label="help">
-              <HelpCenterIcon />
+            <IconButton aria-label="help" sx={{ bgcolor: '#e1e1e6' }}>
+              <HelpCenterIcon fontSize='small' />
             </IconButton>
-            <IconButton aria-label="account">
-              <AccountCircleOutlinedIcon />
+            <IconButton aria-label="account" sx={{ bgcolor: '#e1e1e6' }}>
+              <AccountCircleOutlinedIcon fontSize='small' />
             </IconButton>
           </Stack>
         </Stack>
